@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Roll Me</h1>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100' height='100' rx='10' fill='%23CC3333'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23FFFFFF'/%3E%3C/svg%3E" alt="Dice 1" />
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100' height='100' rx='10' fill='%23CC3333'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23FFFFFF'/%3E%3C/svg%3E" alt="Dice 1" />
+      </div>
+
+      <div>
+        <button class="roll-button" onclick="rollDice()">🎲 ROLL DICE 🎲</button>
+      </div>
+      
+      <div class="result-text" id="result"></div>
+    </div>
+
+    <!-- Winner Notification -->
+    <div id="winnerNotification" class="winner-notification">
+      <h2 id="winnerText"></h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+  </body>
+</html>
